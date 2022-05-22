@@ -53,9 +53,9 @@
 ---
 
 ## Questions:
-#### Question : Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
-Answer for 1: From my perspective, I think the problem for snippet1 failure can be fixed in 10 lines because it is just a small mistake. Now it considers ```url.com``` as a valid link, but ```ucsd.edu``` as on invalid one. For ```url.com```,I just need to add one ```if statement``` to check if there is an openbracket is at the beginning. For ```ucsd.edu```,I just need to add one ```if statement``` to check if a backtick is the previous character.
 
-Answer for 2: From my perspective, I think the problem for snippet1 failure maynot be fixed in 10 lines because we have to consider too many situations. The problem we have now is that index is out of bounds. For, example, I can check if there exists additional brackets, but the problem has too many combinations, so 10 line might not be enough for me.
+Answer for question 1: From my perspective, I think the problem for snippet1 failure can be fixed in 10 lines because it is just a small mistake. Now it considers ```url.com``` as a valid link, but ```ucsd.edu``` as on invalid one. For ```url.com```,I just need to add one ```if statement``` to check if there is an openbracket is at the beginning. For ```ucsd.edu```,I just need to add one ```if statement``` to check if a backtick is the previous character.
 
-Answer for 3: Similar to Snippet2, I don't think that a small change within 10 lines can fix the problem I have now, and the problem is also index is out of bound. To fix the problem, I have to check if there is a missing ```openbracket```, or ```closeparen```, these changes may take more than 10 lines.
+Answer for question 2: From my perspective, I think the problem for snippet1 failure maynot be fixed in 10 lines because we have to consider too many situations. The problem we have now is that index is out of bounds. For, example, I can check if there exists additional brackets, but the problem has too many combinations, so 10 line might not be enough for me.
+
+Answer for question 3: Similar to Snippet2, I don't think that a small change within 10 lines can fix the problem I have now, and the problem is also index is out of bound. To fix the problem, I have to check if there is a missing ```openbracket```, or ```closeparen```, these changes may take more than 10 lines.
